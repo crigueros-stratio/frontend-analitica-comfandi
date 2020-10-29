@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "http://10.2.32.68:10083/analitica",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}

@@ -1,0 +1,69 @@
+<div class="mt-4">
+    <h2><b>Gráfica de compras con crédito rotativo por semanas</b></h2>  
+    
+    <h5><b>1. Descripción</b></h5>
+    <p>En esta gráfica podemos observar distribucion de <b>cantidad de productos</b> comprados por tiendas durante cada semana de un año en especifico.</p>
+        
+    <h5><b>2. Fuentes de Información</b></h5>
+    <ul>
+      <li>ca090mgsolcred (LINIX) -----> Información general de la solicitud de crédito</li>
+      <li>ap014mcliente  (LINIX) -----> Información de los clientes </li>
+      <li>ca109amoraxobl (LINIX) -----> Mora</li>
+      <li>vfvtadf (SIGED) -----> Información de las ventas de clientes</li>
+      <li>gcartif (SIGED) -----> Descripción de artículos y agrupaciones</li>
+      <li>cgseccf (SIGED) -----> Descripción de campos de secciones</li>
+      <li>coordenadas_super_y_droguerias --> Excel adicional recibido</li>
+    </ul>
+    
+    <h5><b>3. Visualización</b></h5>
+
+    <div class="row mb-1 ml-2">
+      <div class="col-3">
+        <label>Seleccionar año</label>
+        <select class="custom-select years" id="yearElem">
+            <option value ="2016" selected>2016</option>  
+            <option value ="2017">2017</option>
+            <option value ="2018">2018</option>
+            <option value ="2019">2019</option>
+        </select>
+      </div>
+  
+      <div class="col-3">
+        <label>Seleccionar sección</label>
+        <select class="custom-select seccionhorizontchart" id="seccionhorizontchartElem">
+          <option value ="2" selected>ALIMENTOS</option>   
+          <option value ="25">CARNE DE RES Y CERDO</option>
+          <option value ="21">COMIDAS RAPIDAS</option>
+          <option value ="10">ELECTRODOMÉSTICOS</option>
+          <option value ="3">FRUVER</option>
+          <option value ="12">GRANOS</option>
+          <option value ="9">HOGAR Y MISCELANEOS</option>
+          <option value ="6">MEDICAMENTOS</option>
+          <option value ="11">NO ALIMENTOS</option>  
+          <option value ="20">PANADERIA</option>
+          <option value ="5">PAPELERIA</option>
+          <option value ="23">PESCADERIA</option>
+          <option value ="22">POLLO PROCESADO</option>
+          <option value ="4">SALSAMENTARIA</option>
+        </select>
+      </div>
+    </div>
+    
+    <svg id="svg"></svg>
+
+    <h5><b>4. Insights </b></h5>
+    <ul>
+      <li>En Octubre y Diciembre del año 2018 hubo una caida en la compra de las siguiente secciones: <br>
+        - Alimentos <br>
+        - Fruver <br>
+        - Medicamentos <br>
+        - Papeleria <br>
+        - Pescaderia <br>
+        - Pollo procesado <br>
+        - Salsamentaria <br>
+      </li>
+      <li>Entre los años 2016 al 2019 se aumenta la compra de la seccion Papeleria en los meses de Enero-Febrero y Agosto-Septiembre.  </li>
+    </ul>
+    <br>
+  
+</div>

@@ -1,0 +1,32 @@
+<div class="mt-4">
+
+    <h2><b>Gráfica de la mora de las obligaciones de crédito de subsidio por años</b></h2>
+            
+    <h5>1. Descripción</h5>
+    <p>En esta gráfica podemos observar el comportamiento de las obligaciones que han entrado en mora desde el año 2016 hasta 2019.</p>
+        
+    <h5>2. Fuentes de Información</h5>
+    <ul>
+    <li> ap014mcliente  (LINIX) -----> Información  Maestra de clientes de crédito </li>
+    <li> ca090mgsolcred (LINIX) -----> Generalidades de la solicitud de crédito </li>
+    <li> ca109amoraxobl (LINIX) -----> Detalle de la mora por obligación en dias por mes por año </li>
+    </ul>
+
+    <h5>3. Visualización</h5>
+    <form title="toggle bar chart between stacked and grouped views">
+        <div class="row">
+            <div class="col-1">
+                <label><input id="toggleStacked" type="radio" name="mode" value="stacked" checked>Apilado</label>
+            </div>
+            <div class="col-1">
+                <label><input id="toggleGrouped" type="radio" name="mode" value="grouped">Agrupado</label>
+            </div>
+        </div>
+    </form>
+
+    <svg id="svg" width="960" height="500" class="pb-10"></svg>
+
+    <h5>4. Insights</h5>
+    <p> El comparativo de las obligaciones de credisubsidio que entraron en Mora desde 2016 muestra que en el año 2019, hubo mas afiliados que salieron de la caja de compensacion o cambiaron  de trabajo. </p>
+    <p> El comparativo de las obligaciones de credisubsidio desde 2016 muestra que ha sido de manera incremental en mas de un 100% las personas que han entrado en mora , es importante ver que es una tendencia que se mantiene en el 2019 con la información que se tiene a la fecha. </p>
+</div>

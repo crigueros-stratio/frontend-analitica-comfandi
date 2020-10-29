@@ -1,0 +1,56 @@
+<div class="mt-4">
+    <h2><b>Gráfica de compras con crédito rotativo por tiendas</b></h2>  
+    
+    <h5><b>1. Descripción</b></h5>
+    <p>En esta gráfica podemos observar en un mapa cada una de las tiendas <b>COMFANDI</b> con la <b>cantidad de articulos</b> vendidos por seccion.</p>
+        
+    <h5><b>2. Fuentes de Información</b></h5>
+    <ul>
+        <li>ca090mgsolcred (LINIX) -----> Información general de la solicitud de crédito</li>
+        <li>ap014mcliente  (LINIX) -----> Información de los clientes </li>
+        <li>ca109amoraxobl (LINIX) -----> Mora</li>
+        <li>vfvtadf (SIGED) -----> Información de las ventas de clientes</li>
+        <li>gcartif (SIGED) -----> Descripción de artículos y agrupaciones</li>
+        <li>cgseccf (SIGED) -----> Descripción de campos de secciones</li>
+        <li>coordenadas_super_y_droguerias --> Excel adicional recibido</li>
+    </ul>
+    
+    <h5><b>3. Visualización</b></h5>
+    <div class="row mb-1 ml-2">
+      <div class="col-md-3 mb-3">
+        <label for="validationTooltip04">Seleccionar el año</label>
+        <select class="custom-select years" id="yearElem">
+            <option value ="2016" selected>2016</option>  
+            <option value ="2017">2017</option>
+            <option value ="2018">2018</option>
+            <option value ="2019">2019</option>
+        </select>
+      </div>
+      <div class="col-md-3 mb-1">
+        <label>Seleccionar mora</label>
+        <select class="custom-select mora" id="moraElem">
+            <option value ="TODOS" selected>TODOS</option>  
+            <option value ="SI">MORA</option>
+            <option value ="NO">NO MORA</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="row mb-4">
+      <div class="col-9" id="map"></div>
+      <div class="col-3" id="divlegend"></div>
+    </div>
+
+    <h5><b>4. Insights </b></h5>
+    <ul>
+      <li>Las tres secciones con más <b>cantidad de articulos</b>  comprados en los años 2016 al 2019 son las siguientes: <br>
+        - Alimentos <br>
+        - No Alimentos <br>
+        - Fruver <br>
+      </li>
+      <li>En los año 2018 y 2019 aumento la compra de unidades de la sección Departamentos</li>
+      <li>En el año 2019 aumento la compra de unidades de la sección Papeleria</li>
+    </ul>
+    <br>
+</div>
+    

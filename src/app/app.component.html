@@ -1,0 +1,31 @@
+<header>
+  <nav class="navbar navbar-light bg-light mx-auto">
+    <a class="navbar-brand">
+      <div class="row">
+        <div class="col">
+          <img src="assets/comfandi_logo.png" width="170" height="85">
+        </div>
+      </div>
+    </a>
+    <div class="row">
+      <div class="col mt-2">
+        <img src="assets/stratio_logo.svg" width="150" height="60">
+      </div>
+      <div class="col mt-4">
+        <img src="assets/telefonica_logo.png" width="150" height="40">
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+      <app-menu></app-menu>
+    </div>
+    <div class="col-10">
+      <div class="container-fluid ml-1 mt-1 mr-1">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

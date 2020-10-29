@@ -1,0 +1,161 @@
+    
+  #map {
+    width:960px;
+    height:500px;
+  }
+  #legend {
+    position: absolute;
+    top: 3px;
+    left: 790px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 100;
+    font-size: 1em;
+    font-family: sans-serif;
+    width: 165px;
+    background: rgba(255,255,255,0.6);
+  }
+  :host ::ng-deep .legendheading {
+    position: relative;
+    height: 25px;
+    padding: 5px 2px 0px 2px;
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  :host ::ng-deep .legenditem {
+    padding: 2px;
+    margin-bottom: 2px;
+  }
+  
+  /*Marker clusters*/
+  :host ::ng-deep .marker-cluster-pie g.arc{
+    fill-opacity: 0.5;
+  }
+  :host ::ng-deep .marker-cluster-pie-label {
+    font-size: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+  /*Markers*/
+  :host ::ng-deep .marker {
+    width: 18px;
+    height: 18px;
+    border-width: 2px;
+    border-radius:10px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-style: solid;
+    fill: #CCC;
+    stroke: #444;
+    background: #CCC;
+    border-color: #444;
+  }
+  :host ::ng-deep .marker div{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+  /*marker categories*/
+  :host ::ng-deep .category-9{
+    fill: #F88;
+    stroke: #800;
+    background: #F88;
+    border-color: #800;
+  }
+  :host ::ng-deep  .category-2{
+    fill: #FA0;
+    stroke: #B60;
+    background: #FA0;
+    border-color: #B60;
+  }
+  :host ::ng-deep .category-3{
+    fill: #FF3;
+    stroke: #D80;
+    background: #FF3;
+    border-color: #D80;
+  }
+  :host ::ng-deep .category-4{
+    fill: #BFB;
+    stroke: #070;
+    background: #BFB;
+    border-color: #070;
+  }
+  :host ::ng-deep .category-5{
+    fill: #9DF;
+    stroke: #007;
+    background: #9DF;
+    border-color: #007;
+  }
+  :host ::ng-deep .category-6{
+    fill: #B8E;
+    stroke: #444;
+    background: #B8E;
+    border-color: #444;
+  }
+  :host ::ng-deep .category-10{
+    fill: #37A;
+    stroke: #444;
+    background: #37A;
+    border-color: #444;
+  }
+  :host ::ng-deep .category-11{
+    fill: #CCC;
+    stroke: #444;
+    background: #CCC;
+    border-color: #444;
+  }
+  :host ::ng-deep .category-12{
+    fill: #F00;
+    stroke: #444;
+    background: #F00;
+    border-color: #444;
+  }
+  :host ::ng-deep .category-22{
+    fill: #880;
+    stroke: #444;
+    background: #880;
+    border-color: #444;
+  }
+  :host ::ng-deep .category-99{
+    fill: #808;
+    stroke: #444;
+    background: #808;
+    border-color: #444;
+  }
+  :host ::ng-deep .category-23{
+    fill: #F0F;
+    stroke: #444;
+    background: #F0F;
+    border-color: #444;
+  }
+  :host ::ng-deep .category-25{
+    fill: #C60;
+    stroke: #444;
+    background: #C60;
+    border-color: #444;
+  }
+  :host ::ng-deep .category-20{
+    fill: #742;
+    stroke: #444;
+    background: #742;
+    border-color: #444;
+  }
+  
+  /*Popup*/
+  :host ::ng-deep .map-popup span.heading {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  :host ::ng-deep .map-popup span.attribute {
+    display: block;
+  }
+  :host ::ng-deep .map-popup span.label {
+    font-weight: bold;
+  }
+  

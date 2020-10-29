@@ -1,0 +1,66 @@
+<div class="mt-4">
+    <h2><b>Gráfica de compras con crédito rotativo</b></h2>  
+    
+    <h5><b>1. Descripción</b></h5>
+    <p>En esta gráfica podemos observar la antidad en <b>dinero</b> vendido por <b>secciones y familias</b> en un año especifio</p>
+        
+    <h5><b>2. Fuentes de Información</b></h5>
+    <ul>
+        <li>ca090mgsolcred (LINIX) -----> Información general de la solicitud de crédito</li>
+        <li>ap014mcliente  (LINIX) -----> Información de los clientes </li>
+        <li>ca109amoraxobl (LINIX) -----> Mora</li>
+        <li>vfvtadf (SIGED) -----> Información de las ventas de clientes</li>
+        <li>gcartif (SIGED) -----> Descripción de artículos y agrupaciones</li>
+        <li>cgseccf (SIGED) -----> Descripción de campos de secciones</li>
+    </ul>
+    
+    <h5><b>3. Visualización</b></h5>
+
+    <div class="row mb-1 ml-2">
+      <div class="col-md-3 mb-1">
+        <label>Seleccionar el año</label>
+        <select class="custom-select years" id="yearElem">
+            <option value ="2016" selected>2016</option>  
+            <option value ="2017">2017</option>
+            <option value ="2018">2018</option>
+            <option value ="2019">2019</option>
+        </select>
+      </div>
+      <div class="col-md-3 mb-1">
+        <label>Seleccionar mora</label>
+        <select class="custom-select mora" id="moraElem">
+            <option value ="TODOS" selected>TODOS</option>  
+            <option value ="SI">MORA</option>
+            <option value ="NO">NO MORA</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="mr-3 mb-4">
+      <svg id="svg" class="mt-4"></svg>
+    </div>
+
+    <h5><b>4. Insights </b></h5>
+    <ul>
+      <li>Las compras con crédito rotativo han venido disminuyendo durante los ultimos 4 años <br>
+          año 2016 --> $14,770,819,578 <br>
+          año 2017 ---> $9,851,687,071 <br>
+          año 2018 ---> $3,808,607,946           
+      </li>
+      <li>Mas de la mitad del dinero de compras con crédito rotativo es destinado a la compra de electrodomésticos. </li>
+      <li>De las compras hechas con crédito rotaivo, la sección de Electrodomesticos fue la que menos tuvo mora teniendo en cuenta el dinero comprado por esa sección.</li>
+      <li>Las tres secciones que usaron mas <b>dinero</b> en compras con credito rotativo en los años: 2016, 2018 y 2019 son las siguientes: <br>
+          - Electrodomésticos <br>
+          - Alimentos <br>
+          - No Alimentos <br>
+      </li>
+      <li>Las tres secciones que usaron mas <b>dinero</b> en compras con credito rotativo en el 2017 son las siguientes: <br>
+        - Electrodomésticos <br>
+        - Alimentos <br>
+        - Papeleria <br>
+      </li>
+    </ul>
+    <br>
+  </div>
+
+

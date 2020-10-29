@@ -1,0 +1,48 @@
+<div class="mt-4">
+    <h2><b> Gráfica de la mora de las obligaciones de credisubsidios por categoría</b></h2>
+            
+    <h5>1. Descripción</h5>
+    <p>En esta gráfica podemos observar el comportamiento de la mora del credisubsidio por la categoria a la que pertenece el afiliado.</p>
+        
+    <h5>2. Fuentes de Información</h5>
+    <ul>
+    <li>ap808migasoci   (LINIX) -----> Información de los clientes </li>
+    <li> ap014mcliente  (LINIX) -----> Información  Maestra de clientes de crédito </li>
+    <li> ca090mgsolcred (LINIX) -----> Generalidades de la solicitud de crédito </li>
+    <li> ca109amoraxobl (LINIX) -----> Detalle de la mora por obligación en dias por mes por año </li>
+
+    </ul>
+
+    <h5>3. Visualización</h5>
+
+    <div class="row">
+        <div class="col-3">
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Selecciona el año a consultar</label>
+                <select class="form-control" id="gravityType">
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+    <form title="toggle bar chart between stacked and grouped views">
+        <div class="row">
+            <div class="col-1">
+                <label><input id="toggleStacked" type="radio" name="mode" value="stacked" checked>Apilado</label>
+            </div>
+            <div class="col-1">
+                <label><input id="toggleGrouped" type="radio" name="mode" value="grouped">Agrupado</label>
+            </div>
+        </div>
+    </form>
+    <svg id="svg" width="960" height="500"></svg>
+
+    <h5>4. Insights</h5>
+    <p>El credisubsidio es un servicio limitado a las categorias A y B, en la grafica aparecen afiliados de la categoria C que en mas de un 50 % han entrado en mora en los años 2017,2018 y 2019.</p>
+    <p>Es una alerta ver afiliados de categoria C con credisubsidio o un indicio de la calidad de los Datos.</p>
+</div>

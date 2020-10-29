@@ -1,0 +1,49 @@
+<div class="mt-4">
+        <h2><b>Gráfica de créditos de subsidio por rangos de montos solicitados</b></h2>  
+    
+        <h5>1. Descripción</h5>
+        <p>En esta gráfica podemos observar en rangos de los montos solicitados quien ha entrado en mora</p>
+            
+        <h5>2. Fuentes de Información</h5>
+        <ul>
+        <li> ap014mcliente  (LINIX) -----> Información  Maestra de clientes de crédito </li>
+        <li> ca090mgsolcred (LINIX) -----> Generalidades de la solicitud de crédito </li>
+        <li> ca109amoraxobl (LINIX) -----> Detalle de la mora por obligación en dias por mes por año </li>
+        </ul>
+        
+        <h5>3. Visualización</h5>
+
+        <div class="row">
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Selecciona el año a consultar</label>
+                    <select class="form-control" id="gravityType">
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <form title="toggle bar chart between stacked and grouped views">
+            <div class="row">
+                <div class="col-1">
+                    <label><input id="toggleStacked" type="radio" name="mode" value="stacked" checked>Apilado</label>
+                </div>
+                <div class="col-1">
+                    <label><input id="toggleGrouped" type="radio" name="mode" value="grouped">Agrupado</label>
+                </div>
+            </div>
+        </form>
+        
+        <div class="row">
+            <div class="col">
+                <svg id="svg" width="960" height="500"></svg>
+            </div>
+        </div>
+        <h5>4. Insights</h5>
+        <p>En esta gráfica podemos observar que los montos aprobados por credisubsidio superan el valor limite para el año 2019. Es importante validar si es un problema de calidad de datos o efectivamente se estan aprobando credisubsidios con montos no permitidos</p>
+        <p>En esta gráfica podemos observar los montos con mayor mora por añio, esto con el fin de evaluar mejor a los afiliados que solicitan credisubsidios con estos montos.</p>
+</div>
+

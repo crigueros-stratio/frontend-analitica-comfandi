@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .outer {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto
+  }
+  
+  .inner {
+    width: 960px;
+    border: solid #d9d9d9 1px;
+  }
+  
+  .controls {
+    float: right;
+    margin-top: 10px;
+    margin-right: 38px;
+  }
+  
+  .bar {
+    fill: steelblue;
+  }
+  
+  .axis {
+    font-size: 14px;
+  }
+  
+  .tick {
+    font-size: 8px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .axis path {
+    display: none;
+  }
+  
+  .legend {
+    font-size: 11px;
+  }
+
+  .nav-item:active {
+    background-color: #e1e1f5;
+  }
+
+
+.nav-item a:hover {
+    color: white;
+    background: rgba(114,113,118, 0.5);
+}
+
+.active-nav {
+    color: white !important;
+    background: #70A3FE !important;
+}
