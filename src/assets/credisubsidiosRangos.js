@@ -124,6 +124,11 @@ function load() {
             setGravityTypeData(filterByYear(dataStandarized, '2019'));
             changeStacked()
         }
+         else if (section == "2020") {
+             console.log('Recibio 2020')
+             setGravityTypeData(filterByYear(dataStandarized, '2020'));
+             changeStacked()
+         }
         //Set the chart combobox to stacked.
         d3.select("#toggleStacked").property("checked", true)
         //console.log(d3.select("#toggleStacked").property("checked"));
